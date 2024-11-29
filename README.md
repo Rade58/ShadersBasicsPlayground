@@ -1,4 +1,4 @@
-# Shaders Basics Playground
+# Fragment Shaders Patterns Playground
 
 ```
 pnpm add lil-gui three
