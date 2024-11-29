@@ -6,9 +6,16 @@ import { OrbitControls } from "three/examples/jsm/Addons.js";
 import vertexShader from "./vertex.glsl";
 import fragmentShader from "./fragment.glsl";
 
-// --------------  -----------------
-// ------------------------------------------------------------
+// We will write some fragment shader code
+//
+// it will output red color, just as we had by default
+// when just providing minimal vertex shader and omiting
+// fragment shader file or inline code completly
 
+// In this case
+// it will be red because of the values we provided for `red, green, blue`
+// 1.0, 0.0, 0.0 and alpha is 1.0
+//
 // ------------------------------------
 // ------------ gui -------------------
 

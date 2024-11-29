@@ -14,6 +14,16 @@ import vertexShader from "./vertex.glsl";
 // fragment shader which will apply 1.0 value for red
 //  0.0 for green and 0.0 for blue and 1.0 for alpha
 // making the red in the process
+
+// We are going to use          RawShaderMaterial
+
+// WE are going to write minimum vertex shader in order
+// for us to not get an error and to see our plane
+// we need minimal vertex shader, but fragment shader we will leave as blank
+// not going to provide fragment shader
+
+// at this point you will see just red color on your plane
+
 // ------------------------------------
 // ------------ gui -------------------
 
