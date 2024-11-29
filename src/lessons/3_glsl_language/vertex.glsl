@@ -1,7 +1,6 @@
 // we need to declare these when using RawShaderMaterial
 uniform mat4 projectionMatrix;
 uniform mat4 viewMatrix;
-// for minimal requirements we don't need this one
 // uniform mat4 modelMatrix;
 
 // we don't need to declare this since we are not using it now 
