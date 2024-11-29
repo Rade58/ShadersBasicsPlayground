@@ -4,16 +4,11 @@ import GUI from "lil-gui";
 import { OrbitControls } from "three/examples/jsm/Addons.js";
 
 import vertexShader from "./vertex.glsl";
-// we don't need fragment shader in order to fulfill minimal
-// requirements, we don't have fragment shader in this lesson
-// import fragmentShader from "./fragment.glsl";
+import fragmentShader from "./fragment.glsl";
 
 // --------------  -----------------
 // ------------------------------------------------------------
-// I think threejs will tell gpu to run some default
-// fragment shader which will apply 1.0 value for red
-//  0.0 for green and 0.0 for blue and 1.0 for alpha
-// making the red in the process
+
 // ------------------------------------
 // ------------ gui -------------------
 
@@ -68,7 +63,8 @@ if (canvas) {
     0.1,
     100
   );
-  camera.position.set(0.5, 0.5, 1);
+  // camera.position.set(0.5, 0.5, 1);
+  camera.position.set(0, 0, 1);
   scene.add(camera);
 
   //------------------------------------------------
@@ -97,7 +93,7 @@ if (canvas) {
 
   const material = new THREE.RawShaderMaterial({
     vertexShader,
-    // fragmentShader,
+    fragmentShader,
     // wireframe: true,
     side: THREE.DoubleSide,
 

@@ -10,7 +10,7 @@ uniform mat4 viewMatrix;
 // so, we are only required to load vertex shader in order
 // for our shader to be called by gpu
 // I guess by default something will be called in case of
-// fragment shader (by default fragment will be: (r:1.0, g:0.0, b:0.0, a:1.0) 
+// fragment shader (by default fragment will be: (r:1.0, g:1.0, b:1.0, a:1.0) 
 
 attribute vec3 position;
 

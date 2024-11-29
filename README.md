@@ -1,4 +1,4 @@
-# Vertex Shaders Playground
+# Shaders Basics Playground
 
 ```
 pnpm add lil-gui three
