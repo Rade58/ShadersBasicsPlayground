@@ -28,3 +28,19 @@ console.log({ fragmentShader });
 ```
 
 you will see that these are strings which you assign to `vertexShader` and `fragmentShader` properties of `RawShadeMaterial` or `ShaderMaterial` instance
+
+# Debugging
+
+1. Finding errors
+   if we forget semicolon threejs will log out shader and tell
+   us the line where the error occured with a short
+   description. Take your time and read the error and
+   find what is wrong
+2. Read the shader that is logged in console when you have an error
+
+there are some pluggins but author of the workshop
+tend not to use them
+
+3. Test values
+   if you don't know what is something, pass it to `gl_FragColor`
+   value, for example
